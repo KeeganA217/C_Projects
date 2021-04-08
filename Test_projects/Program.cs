@@ -6,7 +6,17 @@ namespace Test_projects
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+            var total =  new int[50];
+            for(var i = 1; i <= 100; i++)
+            {
+                if(i % 3 == 0)
+                {
+                    total[i] = i;
+                    Console.WriteLine(total);
+                }
+            }
+
         }
     }
 }
