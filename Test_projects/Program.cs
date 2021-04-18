@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Test_projects
 {
@@ -7,17 +8,15 @@ namespace Test_projects
         static void Main(string[] args)
         {
 
-            var numbers = new int[] { 1, 2, 3, 4, 5 };
+            var fullName = "Keegan Adams ";
 
-            Console.WriteLine("Length:" + numbers.Length);
+            Console.WriteLine(fullName.ToLower());
 
-            var index = Array.IndexOf(numbers, 4);
+            var index = fullName.IndexOf(' ');
+            var firstName = fullName.Substring(index);
+
             Console.WriteLine(index);
-
-            var test = Array.Clear(numbers, 2, 2);
-
-            Console.WriteLine(test);
-
+            Console.WriteLine(firstName.Trim()); ;
         }
     }
 }
