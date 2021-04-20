@@ -8,15 +8,12 @@ namespace Test_projects
         static void Main(string[] args)
         {
 
-            var fullName = "Keegan Adams ";
+            var name = "Keegan Adams";
 
-            Console.WriteLine(fullName.ToLower());
-
-            var index = fullName.IndexOf(' ');
-            var firstName = fullName.Substring(index);
-
-            Console.WriteLine(index);
-            Console.WriteLine(firstName.Trim()); ;
+            foreach (var letter in name)
+            {
+                Console.WriteLine(letter);
+            }
         }
     }
 }
